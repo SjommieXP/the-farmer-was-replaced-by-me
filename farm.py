@@ -21,19 +21,6 @@ def rcycle():
 		move(South)
 	move(West)
 	
-
-def spec_cycle(xlimit, ylimit):
-	move(East)
-	
-	if get_pos_x() == xlimit:
-		move(North)
-	if get_pos_x() == xlimit and get_pos_y() == ylimit:
-		for i in range(2):
-			move(West)
-		for i in range(2):
-			move(South)	
-	return get_pos_x() == 0 and get_pos_y() == 0
-
 def get_pos():
 	x = get_pos_x()
 	y = get_pos_y()
